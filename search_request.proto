@@ -1,0 +1,10 @@
+/*define a search request message format, where each search request
+ has a query string, the particular page of results you are interested 
+ in, and a number of results per page */
+syntax = "proto3";
+
+message SearchRequest {
+  string query = 1;
+  int32 page_number = 2;
+  int32 result_per_page = 3;
+}

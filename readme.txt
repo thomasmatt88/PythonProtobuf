@@ -2,11 +2,13 @@ Example to show exchange of data via protobuf from one Python application to ano
 
 Motivation:
 - Protobuf encoding is significantly more efficient in size than either XML or JSON encoding
+    - minimizes data storage
+    - minimizes network traffic
 - Serialization and deserialization may become the bottleneck in data interchange because these 
 operations are CPU-intensive. Efficient serialization and deserialization is another Protobuf design goal.
 
 
-Manually create searchrequest.proto
+Manually create searchrequest.proto (schema definition)
 
 Now that you have a .proto, the next thing you need to do is generate the classes you'll need 
 to read and write SearchRequest messages

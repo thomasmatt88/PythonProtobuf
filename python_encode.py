@@ -10,6 +10,6 @@ print(searchrequest)
 print(type(searchrequest))
 
 # Write searchrequest to disk.
-f = open("serializedbypython.bin", "wb")
+f = open("serializedbypython.pb", "wb")
 f.write(searchrequest.SerializeToString())
 f.close()

@@ -25,7 +25,7 @@ Serialize/Encode data to binary with Python
 https://stackoverflow.com/questions/44577730/file-extension-for-serialized-protobuf-output
 > python .\python_encode.py
 
-This will create searializedbypython.bin with data hardcoded in python_encode.py
+This will create searializedbypython.pb with data hardcoded in python_encode.py
 
 Decode binary data with Python
 > python .\python_decode.py

@@ -20,8 +20,8 @@ Check protoc is working
 > \protoc\protoc-3.19.4-win64\bin\protoc.exe –version
 libprotoc 3.19.4
 
-protoc -I=$SRC_DIR --python_out=$DST_DIR $SRC_DIR/search_request.proto
-> .\protoc\protoc-3.19.4-win64\bin\protoc.exe --python_out="./python_out" search_request.proto
+protoc -I=$SRC_DIR --python_out=$DST_DIR $SRC_DIR/searchrequest.proto
+> .\protoc\protoc-3.19.4-win64\bin\protoc.exe --python_out="./python_out" searchrequest.proto
 
 
 Serialize/Encode data to binary with Python

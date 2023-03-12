@@ -8,3 +8,12 @@ searchrequest.ParseFromString(f.read())
 f.close()
 
 print(searchrequest)
+
+if not searchrequest.HasField("timestamp"):
+    """
+    checks if field has been assigned a value in the message instance,
+    regardless of whether the field is defined in the schema or not
+    """
+    searchrequest.timestamp.GetCurrentTime()  # set timestamp at read
+
+print(searchrequest)
